@@ -5,10 +5,20 @@ export default ({ title, children }) => (
         <Head>
             <title>{title}</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
         </Head>
-        <div className="container justify-content-center align-items-center">
+        <div className="container">
             {children}
         </div>
+
+        <style jsx>{`
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        `}</style>
+
     </div>
 )
